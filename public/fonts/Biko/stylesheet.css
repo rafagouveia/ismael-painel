@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Biko Bold';
+    src: url('Biko-Bold.woff') format('woff'),
+        url('Biko-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biko Light';
+    src: url('Biko-Light.woff') format('woff'),
+        url('Biko-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biko';
+    src: url('Biko.woff') format('woff'),
+        url('Biko.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biko Black';
+    src: url('Biko-Black.woff') format('woff'),
+        url('Biko-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
