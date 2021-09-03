@@ -1,0 +1,413 @@
+@import url('/fonts/Biko/stylesheet.css');
+@import url('/fonts/EnvolveSans/stylesheet.css');
+@import url('/fonts/Galyon/stylesheet.css');
+@import url('/fonts/ProximaNova/stylesheet.css');
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:visited {
+    color: inherit
+}
+
+.menu-bar {
+    position: relative;
+    font-family: "Proxima Nova";
+    font-weight: 510;
+    color: white;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+}
+
+
+.menu-bar .nav-logo #menu-toggle {
+    display: none;
+    cursor: pointer;
+
+}
+
+#menu-toggle:active {
+    color: #535050;
+}
+
+.menu-bar .nav-logo {
+    display: flex;
+    background: white;
+    align-items: center;
+    justify-content: space-between;
+    color: #a2a2a2;
+    padding: 10px 20px;
+
+}
+
+.menu-bar a {
+    padding: unset;
+}
+
+.menu-bar ul li::first-letter {
+    text-transform: uppercase;
+
+}
+
+.menu-bar ul {
+    position: relative;
+    display: flex;
+    margin: unset;
+    padding: unset;
+    list-style: none;
+    background: linear-gradient(45deg, #2196f3 30%, #21cbf3 90%);
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+
+}
+
+.menu-bar ul li {
+    padding: 15px;
+    position: relative;
+    transition: background-color ease-in-out 0.3s;
+
+
+}
+
+.menu-bar li:hover {
+    background: rgba(0, 0, 0, 0);
+    transition: background-color ease-in-out 0.3s;
+}
+
+.menu-bar ul li:after {
+    content: "";
+    background: white;
+    position: absolute;
+    height: 4px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scale(0);
+    transition: all ease-in-out 0.2s;
+}
+
+.menu-bar ul li:hover::after {
+    transform: scale(1);
+    transition: all ease-in-out 0.2s;
+
+}
+
+.box-cards {
+    display: flex;
+    flex-wrap: wrap;
+    /*! margin: 60px 7%; */
+    /*! flex-basis: min-content; */
+    /*! flex-grow: 0.8; */
+    /*! width:  100%; */
+    position: relative;
+    width: 87%;
+}
+
+.card-products {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 206px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    margin: 0 13px 26px;
+    transition: all ease-in-out 0.1s;
+}
+
+.card-products:hover {
+    transform: scale(1.03) !important;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+}
+
+.card-media {
+    height: 140px;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-products .card-content {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+}
+
+.card-products .card-content .card-title {
+    font-size: 18px;
+    padding: 8px;
+}
+
+.card-products .card-content .card-subtitle {
+    font-size: 14px;
+    color: #333;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 34px;
+}
+
+.card-products .card-footer {
+    box-shadow: 0 -14px 32px 22px white;
+}
+
+
+/* PAG CONTATO */
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    font-family: "Proxima Nova Thin", sans-serif;
+    padding: 15px;
+    color: white;
+    background-color: darkblue;
+    background-image: url("./medias/background.jpg");
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position: bottom;
+
+    transition: ease-in-out .3s;
+}
+
+.page-content:hover {
+    background-size: auto auto;
+    transition: ease-in-out .3s;
+}
+
+.page-content .page-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.mini-card {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px
+}
+
+.mini-card .media-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.mini-card .media-body span:first-of-type {
+    font-size: 19px;
+    font-family: "Proxima Nova Rg";
+    font-weight: bold;
+}
+
+.mini-card > span:first-child {
+    padding-left: 20px;
+    font-size: 35px !important;
+}
+
+.page-grid .row span {
+    padding-right: 15px;
+}
+
+
+.page-content .page-grid .row.infos {
+    padding: 60px 0;
+
+}
+
+.page-header {
+    display: grid;
+    justify-content: center;
+    background: darkblue;
+    color: white;
+    padding: 24px 22px;
+}
+
+.page-header .page-title {
+    font-size: xx-large;
+}
+
+.page-header .page-subtitle {
+    font-size: 15px;
+}
+
+.row.contact-form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: #0000004d 0px 0px 5px;
+    background: white;
+    overflow: hidden;
+}
+
+.row.contact-form .form-group {
+
+    padding: 10px 30px;
+}
+
+.form-item > div:last-of-type {
+    margin-left: 20px
+}
+
+.form-item > div:first-of-type {
+    margin-left: 0
+}
+
+.product-page {
+    padding: 30px;
+    font-family: "Proxima Nova", Arial, sans-serif;
+}
+
+.product-page .product {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.product .product-image {
+    width: 290px;
+
+}
+
+.product-page .product-content {
+    padding: 5px 20px;
+    font-size: 20px;
+    display: flex;
+    flex-basis: min-content;
+    flex-grow: 1;
+}
+
+.product .product-image img {
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.product .product-content .product-information {
+    display: flex;
+    flex-flow: wrap column;
+}
+
+.product-content .product-information .product-title {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.product-content .product-information .product-description {
+    font-size: 16px;
+    color: #666;
+}
+
+
+/* ABOUT PAGE*/
+
+.about-page {
+
+    font-family: Proxima Nova;
+}
+
+.about-page .about-header {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    color: white;
+    text-align: center;
+    background: darkblue url(http://localhost:3000/medias/background.jpg) no-repeat bottom;
+    background-size: cover;
+    background-blend-mode: multiply;
+    transition: background-color ease-in-out 3ms;
+    font-style: italic;
+}
+
+.about-page .about-content {
+    padding: calc(100% - 86%);
+}
+
+.about-page .about-content .about-description {
+
+}
+
+
+/* FOOTER*/
+
+.page-footer {
+    font-family: "Proxima Nova", sans-serif;
+    width: auto;
+    color: white;
+    background-color: #262626;
+}
+
+.page-footer .footer-credits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #1d1d1d;
+}
+
+@media (max-width: 602px) {
+
+    .menu-bar .nav-logo #menu-toggle {
+        display: initial;
+    }
+
+    .menu-bar .nav-logo {
+        position: relative;
+        z-index: 9999;
+    }
+
+    .menu-bar ul {
+        position: absolute;
+        flex-direction: column;
+        top: -150px;
+        width: 100%;
+        z-index: 999;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .menu-bar ul.open {
+        top: 72px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .menu-bar ul li {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.07);
+    }
+
+    .backdrop.active {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+    }
+
+    .product-page {
+        padding: 0;
+    }
+
+    .product .product-image {
+        width: 100%;
+
+    }
+
+    .card-products {
+        width: 170px;
+    }
+
+    .product .product-image > img {
+        width: 100%;
+    }
+}
