@@ -6,7 +6,7 @@ const baseDir = `${__dirname}/build/`
 
 app.use(express.static(`${baseDir}`))
 
-app.get('/ismael-portal', (req, res) => res.sendfile('index.html' , { root : baseDir } ))
+app.get('*', (req, res) => res.sendFile('index.html' , { root : baseDir }));
 
 
 const port = 21086;
